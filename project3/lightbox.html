@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>lightbox</title>
-    <link rel="stylesheet" href="css/lightbox.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
-</head>
-<body>
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="header-top">
-            <h2>PIXELS</h2>
-            <div class="search">
-                <input type="search" placeholder="Search" id="searchBar">
-                <button><i class="fa fa-search fa-2x"></i></button>
-            </div>
+      <div class="header-top">
+        <h2>PIXELS</h2>
+        <div class="search">
+          <input type="search" placeholder="Search" id="searchBar" />
+          <i class="fa fa-search"></i>
         </div>
-        <h5>photos for you</h5>
-       
-        <nav>
+      </div>
+      <h5>photos for you</h5>
+
+      <nav>
         <ul>
-            <li><a href="#">Nature</a></li>
-            <li><a href="#">Animals</a></li>
-            <li><a href="#">Travel</a></li>
+          <li><a href="#">Nature</a></li>
+          <li><a href="#">Animals</a></li>
+          <li><a href="#">Travel</a></li>
         </ul>
-        </nav>
+      </nav>
     </header>
     <div id="images"></div>
- <script src="js/lightbox.js"></script>   
-</body>
+    <div id="lightbox"></div>
+    <script src="js/lightbox.js"></script>
+  </body>
 </html>

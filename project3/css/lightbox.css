@@ -1,60 +1,103 @@
-*{
- margin: 0;
- padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    
-    width:100%;
-    background-color: rgb(231, 229, 229);
+body {
+  width: 100%;
+  background-color: white;
 }
-header{
-    border-bottom: 1px solid rgb(160, 159, 159);
-    width: 100%;
-    
+header {
+  border-bottom: 1px solid rgb(216, 212, 212);
+  width: 100%;
+  margin-top: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
 }
 
 .header-top {
-    width: 50%;
-    display: flex;
-    padding-right: 20px;
-    padding-left: 20px;
-    
+  width: 50%;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 h5 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .search {
-   margin-left: 20px;
-    width: 100%;
+  margin-left: 20px;
+  width: 100%;
+}
+
+#searchBar:focus {
+  outline: none;
+  box-shadow: 0 0 3pt 3pt rgb(194, 192, 192);
 }
 
 .search input {
-    width: 90%;
-    height: 30px;
-   
-    border-radius: 30px;
-    font-size: 20px;
-}
-    
-ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-
-    
+  width: 90%;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  border-style: groove;
 }
 
-ul a{
-    text-decoration: none;
-    color:black;
-   
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
 }
 
 #images {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+  margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+i {
+  position: relative;
+  right: 40px;
+  opacity: 0.5;
+}
+i:hover {
+  cursor: pointer;
+}
+
+#images img {
+  height: 200px;
+
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border: 2px solid white;
 }
