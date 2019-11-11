@@ -101,3 +101,20 @@ i:hover {
   max-height: 80%;
   border: 2px solid white;
 }
+@media screen and (max-width:1200px){
+    #images img{
+        height: auto;
+        width: 100%;
+
+    }
+    .header-top {
+        width: 100%;
+    }
+
+    .search {
+        width: 100%;
+    }
+    #searchBar {
+        width: 85%;
+    }
+}
